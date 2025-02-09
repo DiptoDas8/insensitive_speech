@@ -11,10 +11,11 @@ from langchain.chains import create_retrieval_chain
 from langchain import hub
 from langchain.chains.combine_documents import create_stuff_documents_chain
 
-llm = Ollama(model="deepseek-r1", base_url="http://127.0.0.1:11434")
+# llm = Ollama(model="deepseek-r1", base_url="http://127.0.0.1:11434")
+llm = Ollama(model="llama3.1", base_url="http://127.0.0.1:11434")
 
 embed_model = OllamaEmbeddings(
-    model="deepseek-r1",
+    model="llama3.1",
     base_url='http://127.0.0.1:11434',
 )
 
